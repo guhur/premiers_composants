@@ -1,70 +1,31 @@
-# Getting Started with Create React App
+# Prise en main des composants
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Ce TP vous familiarise sur la notion de composants, de states et de props. Pour commencer, copiez [le répertoire du projet](https://github.com/guhur/premiers_composants) dans un [nouveau répertoire git](https://docs.github.com/en/free-pro-team@latest/github/getting-started-with-github/fork-a-repo).
 
-## Available Scripts
 
-In the project directory, you can run:
+## Questions
 
-### `yarn start`
+**1. Comment installer le projet ?**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+**2. Comment lancer l'application ?**
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+**3. Que se passe-t'il lors du lancement de l'application ?**
 
-### `yarn test`
+En regardant dans le code de `src/index.jsx`, vous remarquez que le composant `App` n'est pas utilisé. 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**4. Résoudre ce problème. Qu'avez-vous fait ?**
 
-### `yarn build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**5. Un message d'erreur apparaît désormais dans la console. Corrigez ce problème.**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Nous allons maintenant personnaliser notre bouton en ajoutant un peu de CSS.
+Pour cela, ajoutez la ligne `import './button.css'` dans le fichier `src/components/button.jsx`.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+**6. Modifiez les fichiers `src/index.css` et `src/button.js` pour que le bouton ait un fond rouge et un texte en blanc**
 
-### `yarn eject`
+Nous souhaitons maintenant avoir plusieurs fois le même bouton.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+**7. Modifiez le fichier `src/index.jsx` pour dupliquer le bouton en plusieurs exemplaires**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Vous risquez d'obtenir une nouvelle erreur, car un composant ne peut avoir qu'une seule enfant. Cela se résout en encapsulant les différents enfants dans une balise vide : `<></>`.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
